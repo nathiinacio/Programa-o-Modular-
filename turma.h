@@ -1,40 +1,12 @@
-/***************************************************************************
- *
- *  $MCD Mзdulo de definiусo: TUR  Turma
- *
- *  Arquivo gerado:              TURMA.h
- *  Letras identificadoras:      TUR
- *
- *  Nome da base de software:    Arcabouуo para a automaусo de testes de programas redigidos em C
- *  Arquivo da base de software: D:\AUTOTEST\PROJETOS\LISTA.BSW
- *
- *  Projeto: INF 1301 / 1628 Automatizaусo dos testes de mзdulos C
- *  Gestor:  LES/DI/PUC-Rio
- *  Autores: cgln - Cristiane - Guilherme - Leonardo - Nathрlia
- *
- *  $HA Histзrico de evoluусo:
- *     Versсo  Autor    Data     Observaушes
- *     2       cgln  07/set/2017 unificaусo de todos os mзdulos em um sз projeto
- *     1       cgln  29/ago/2017 inьcio desenvolvimento
- *
- *  $ED Descriусo do mзdulo
- *     Este modulo implementa um conjunto de funcoes para criar e manipular a estrutura turma.
- *
- ***************************************************************************/
-
-/***** Declaraушes exportadas pelo mзdulo *****/
-
-/* Tipo referЖncia para uma turma */
-
 typedef struct turma Turma ;
 
 /***********************************************************************
  *
- *  $TC Tipo de dados: TUR Condiушes de retorno
+ *  $TC Tipo de dados: TUR Condições de retorno
  *
  *
- *  $ED Descriусo do tipo
- *     Condiушes de retorno das funушes da turma
+ *  $ED Descrição do tipo
+ *     Condições de retorno das funções da turma
  *
  ***********************************************************************/
 
@@ -44,10 +16,10 @@ typedef enum {
     /* Concluiu corretamente */
     
     TUR_CondRetFaltouMemoria ,
-    /* Faltou memзria ao tentar criar turma */
+    /* Faltou memória ao tentar criar turma */
     
     TUR_CondRetFormatoInvalido ,
-    /* ParРmetro com formato invрlido */
+    /* Parâmetro com formato inválido */
     
 } TUR_tpCondRet ;
 
@@ -330,5 +302,3 @@ TUR_tpCondRet TUR_ExibeTurma ( Turma * tur) ;
  ***********************************************************************/
 
 TUR_tpCondRet TUR_ExcluiTurma ( Turma * turma ) ;
-
-/********** Fim do mзdulo de definiусo: Mзdulo turma **********/
